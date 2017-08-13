@@ -1,0 +1,119 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts,amssymb,amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage[usenames, dvipsnames]{color}
+
+
+\def\qed{$\hfill\Box$}   % konec dokaza
+\def\qedm{\qquad\Box}   % konec dokaza v matematičnem načinu
+
+\newtheorem{definicija}{Definicija}
+\newtheorem{zgled}{Zgled}
+
+\title{Grafovje in Številje}
+\author{Prahmed Kavči}
+\date{30.\ februar 2718}
+
+%NAVODILA:
+
+%Na računalniku bi sedaj poleg odprte datoteke moral/a imeti še tri slike: "eulerjeva", "petersenov_graf_barvanje" in "petersenov_graf_mnozice", pdf datoteko "lateh_delavnica", ki naj služi kot cilj tvojega preurejanja te datoteke in pa "lateh_cit_sit", ki ti bo zagotovo pomagal, ko malo osvojiš tovrstno pisanje.
+
+%Da ti bo program barval kodo, pojdi na Oblika -> Barvanje kode -> LaTeX. Če želiš večjo pisavo pa Oblika -> Pisava ...
+
+%Nad "\begin{document}" ti ni treba spremeniti ničesar.
+
+%Začni na začetku, najboljše bo, če slediš besedilu, saj boš tako najlažje opazil/a, kje kaj manjka ali pa je treba besedilo oblikovati z ustreznimi ukazi. 
+
+
+
+\begin{document}
+
+%%%%
+ 
+dodaj naslov
+
+%%%%
+
+Na Marsu
+
+V teoriji grafov poznamo mnogo različnih tipov grafov. Razlikujemo jih glede na njihove specifične lastnosti. V tem seminarju se bomo ukvarjali s Kneserjevimi grafi oziroma podrobneje, s kromatičnim številom le-teh. Najprej podajmo nekaj glavnih definicij.
+
+%%%%
+
+DEFINICIJA
+Graf G je urejen par (V,E), kjer je V množica vseh vozlišč, E pa množica vseh povezav med temi vozlišči.
+
+DEFINICIJA
+Graf ??, imenujemo ??, če je množica vozlišč ?? družina vseh $k$-elementnih podmnožic množice ??. Dve vozlišči sta povezani natanko takrat, ko sta disjunktni. 
+
+
+Povejmo še, da za število vozlišč velja ??. V primeru, ko je ??, imata vsaki dve $k$-elementni množici neprazen presek. Tak Kneserjev graf nima nobenih povezav, zato privzemimo, da velja ??.
+
+DEFINICIJA
+Najmanjše število $m$, ki zadošča barvanju vozlišč grafa $G$, imenujemo ??. Označimo ga s ??.
+
+DEFINICIJA
+Preslikavo ??, ki slika vozlišča grafa v množico barv, imenujemo ??. Ta preslikava zadošča pogoju, da sta vsaki dve sosednji vozlišči pobarvani z različnima barvama.
+
+
+Kromatično število grafa $G$ je torej najmanjše število barv, s katerimi lahko pobarvamo vozlišča grafa tako, da se nobeni dve sosednji vozlišči ne slikata v isto barvo. Množico vozlišč $V$ bi radi predstavili kot disjunktno unijo barvnih razredov ??, teh pa želimo, da je najmanj.
+
+
+
+Oglejmo si enega najznamenitejših grafov vseh časov.
+
+\begin{zgled}{Kneserjev graf $K(5,2)$ je zelo znan primer, imenujemo ga Petersenov graf. 
+
+Dodaj sliki, najprej dodaj le eno sliko, če imaš preveč časa, pa se potrudi dodati še drugo.
+
+Ta graf zelo pogosto pride prav pri dokazovanju obstoja nekega tipa grafa ali pa kot protiprimer. Imenuje se po \textbf{Juliusu Petersenu}, ki ga je skonstruiral za najmanjši kubični graf, to je, graf, ki je regularen stopnje $3$, brez mostov in brez barvanja povezav s tremi barvami. Ima $10$ vozlišč in $15$ povezav. Če je kdo besedilo bral, ga morda zanima, kaj pomeni, da je graf regularen. Ta podatek lahko zavzet bralec najde na \\ 
+??.
+}
+\end{zgled}
+
+\noindent
+Dodaj rdečo črto.
+
+\section{Po Marsu}
+Po padcu z Marsa nas je ujel Euler. Kot naš rešitelj si je privoščil predstaviti nam svojo funkcijo iz teorije števil.
+
+DEFINICIJA
+Za vse ?? označimo število celih števil iz množice
+??, ki so tuja številu $n$. Preslikavo ?? imenujemo Eulerjeva
+funkcija.
+
+
+
+
+\begin{table}[h!]
+Tabela prikazuje izračun prvih šest vrednosti funkcije $\varphi (n)$. V $n$-ti
+vrstici so krepko natisnjena števila med $1$ in $n$, ki so tuja številu $n$. Slika pa grafično prikazuje prvih $100$ vrednosti funkcije $\varphi (n)$.
+\[
+Dodaj tabelo, uporabi okolje "array". Če se ti ne da vpisovati vseh vrednost, prepiši le prvi dve vrstici.
+\] 
+Dodaj še napis pod tabelo, uporabi "caption".
+\end{table}
+
+SLIKA
+Dodaj sliko "eulerjeva.PNG".
+
+Zapišimo nekaj lastnosti te funkcije:
+
+Potrudi se jih zapisati v okolje "itemize".
+
+Dokažimo, da zadnja lastnost zagotovo velja za $n=6$.
+
+{\emph Dokaz:}
+V okolju "eqnarray" dokaži zadnjo lastnost za n=6.
+\qed
+
+Brez konteksta zapišimo še eno najlepših identitet, Eulerjevo seveda:
+??Zapiši identiteto.
+
+
+\end{document}
