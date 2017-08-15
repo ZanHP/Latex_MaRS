@@ -1,0 +1,146 @@
+\documentclass{beamer}
+%Od tukaj do polne vrstice % ne spreminjaj ničesar.
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{textpos}
+\usepackage{wrapfig}
+
+\definecolor{rdeca2017}{HTML}{8e0d1a}
+
+
+\mode<presentation>
+\usetheme{Boadilla}
+\usefonttheme{structuresmallcapsserif}
+\usenavigationsymbolstemplate{} 
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{footline}%
+    \usebeamerfont{author in head/foot}\setbeamercolor{bgcolor}{bg = rdeca2017}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{footline}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{footline}%
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\setbeamercolor{structure}{fg=rdeca2017}
+\setbeamercolor{block title}{fg=white,bg=rdeca2017}
+\setbeamercolor{block body}{fg=white,bg=rdeca2017}
+\setbeamercolor{title}{bg = rdeca2017, fg = white}
+\setbeamercolor{frametitle}{fg = white, bg = rdeca2017} 
+\setbeamercolor{footline}{bg = rdeca2017, fg = white}
+
+\addtobeamertemplate{frametitle}{}{%             %logo 
+\begin{textblock*}{10mm}(.9\textwidth,-1cm)
+\includegraphics[height=0.98cm]{logo_MaRS2017.png}
+\end{textblock*}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tukaj lahko definiraš nova okolja ali oznake.
+\theoremstyle{plain}
+\newtheorem{izrek}{Izrek}
+\newtheorem{trditev}{Trditev}
+\newtheorem{lema}{Lema}
+\newtheorem{definicija}{Definicija}
+% Za številske množice uporabi naslednje simbole
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Izpolni naslov in avtorje s svojimi podatki
+\title{KALEIDOCIKLI}
+\author[Katharina, Katja, Tina, David]{\includegraphics[width = 5cm]{logo_MaRS2017.png} \\ Katharina Pavlin, Katja Kozlevčar, Tina Šafarič \\ mentor: David Gajser}
+%\date{20.~avgust~2016}
+
+\begin{document}
+%\selectlanguage{slovene}
+
+
+\begin{frame}
+\maketitle
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Osnovni gradniki kaleidocikla}
+%\begin{figure}[h!bt]
+%\centering
+%\includegraphics[width=15cm]{tetraeder1.png}
+%\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Dve lastnosti naših tetraedrov}
+%\begin{figure}[h!bt]
+%\centering
+%\includegraphics[width=12cm]{tetraeder.png}
+%\end{figure}
+\pause
+\begin{enumerate}
+\item $X$ je pravokoten na robova dolžine $a$.\pause
+\item $|X| = \sqrt{b^2 - \frac{a^2}{2}}.$
+\end{enumerate}
+
+%\pause
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+\begin{frame}
+\frametitle{Osrednja formula za $2n$ tetraedrov}
+\large
+
+$$b\geq \frac{a}{2}\sqrt{2 + tan^2 (\frac{\pi}{n})}$$
+
+\begin{itemize} \pause
+\item $n=3$: \hspace {0.5cm} $\frac{b}{a}\geq \frac{\sqrt{5}}{2} \doteq 1.11803$ \pause
+\item $n=4$: \hspace {0.5cm} $\frac{b}{a}\geq \frac{\sqrt{3}}{2} \doteq 0.86603$ \pause
+\item $n=5$: \hspace {0.5cm} $\frac{b}{a}\geq \frac{1}{2}\sqrt{2 + tan^2 (\frac{\pi}{5})} \doteq 0.79496 $ \pause
+\item $n\rightarrow \infty $: \hspace {0.195cm} $\frac{b}{a}\geq \frac{\sqrt{2}}{2} \doteq 0.70711 $ \pause
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Viri (ogled 16. 7. 2016)}
+\begin{itemize}
+\item Izdelava: \url{https://www.youtube.com/watch?v=kFUyXWlObLw}
+\item Del teorije: \url{http://www.mathematische-basteleien.de/kaleidocycles.}
+\item Patent (avtor Ralph M. Stalker): \url{http://www.google.com/patents/US1997022}
+\item Računalniške simulacije: \url{http://intothecontinuum.tumblr.com/post/50873970770/an-even-number-of-at-least-8-regular-tetrahedra}
+\end{itemize}
+\end{frame}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
